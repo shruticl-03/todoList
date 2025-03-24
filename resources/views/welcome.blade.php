@@ -407,10 +407,13 @@
 <body class="antialiased">
     <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
         <div style="color: white;">
-
             <h1>todo List</h1>
-            <label for="listItem">New Todo Item</label><br>
-            <input type="text" name="listItem">
+            <form method="post" action="{{route('saveItem')}}" accept-charset="UTF-8">
+                @csrf
+                <label for="listItem">New Todo Item</label><br>
+                <input type="text" name="listItem"><br>
+                <button type="submit">Save</button>
+            </form>
         </div>
     </div>
 </body>
