@@ -408,6 +408,17 @@
     <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
         <div style="color: white;">
             <h1>todo List</h1>
+
+            @foreach($listItems as $listItem)
+            <div class="flex" style="align-items: center; justify-content: space-between; width: 100%;">
+                <form method="post" action="{{route('markComplete',$listItem->id)}}" accept-charset="UTF-8" style="display: flex; align-items: center;">
+                    @csrf
+                    <p style="margin-right: 20px;">Item: {{$listItem->name}}</p>
+                    <button type="submit" style="max-height: 25px;">Mark Complete</button>
+                </form>
+            </div>
+            @endforeach
+
             <form method="post" action="{{route('saveItem')}}" accept-charset="UTF-8">
                 @csrf
                 <label for="listItem">New Todo Item</label><br>
