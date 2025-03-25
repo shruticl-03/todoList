@@ -422,7 +422,7 @@
             <form method="post" action="{{route('saveItem')}}" accept-charset="UTF-8">
                 @csrf
                 <label for="listItem">New Todo Item</label><br>
-                <input type="text" name="listItem"><br>
+                <input type="text" name="listItem" required><br>
                 <button type="submit">Save</button>
             </form>
         </div>
