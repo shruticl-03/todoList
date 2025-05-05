@@ -26,6 +26,12 @@ Database: MySQL
 
 Others: Blade templating, Laravel Routing, Eloquent ORM
 
+
+📸 Preview
+
+![image](https://github.com/user-attachments/assets/d68efdc0-63d2-4c9b-a655-141a1e8e449b)
+
+
 📦 How to Run
 
 Clone the repository
