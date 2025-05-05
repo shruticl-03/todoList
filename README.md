@@ -17,6 +17,7 @@ Backend powered by Laravel with MySQL database
 Clean, responsive design using CSS
 
 🛠️ Tech Stack
+
 Frontend: HTML, CSS, JavaScript
 
 Backend: Laravel (PHP)
@@ -26,6 +27,7 @@ Database: MySQL
 Others: Blade templating, Laravel Routing, Eloquent ORM
 
 📦 How to Run
+
 Clone the repository
 
 Run composer install
